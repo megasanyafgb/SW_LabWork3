@@ -1,0 +1,21 @@
+@startjson
+
+title Example of JSON Data
+
+{ "loc":
+	{
+		"lname": "Odesa",
+		"dept":
+			{
+				"dname": "Odesa Dept",
+				"emp": 
+				{	
+					"ename": "Blake",
+					"job": "Manager",
+					"mgr": "King"
+				}
+			}
+	}
+}
+
+@endjson

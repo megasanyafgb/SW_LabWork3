@@ -1,0 +1,35 @@
+@startuml
+
+title Реляційна схема бази даних
+
+hide circle
+
+entity "Person" as person {
+    (PK) person_id
+    --
+    name
+    age
+    person_type
+}
+
+entity "Teacher" as teacher {
+    (PK) teacher_id
+    --
+    (FK) person_id
+    course
+    work_experience
+}
+
+entity "Student" as student {
+    (PK) student_id
+    --
+    (FK) person_id
+    (FK) teacher_id
+    course
+    student_group
+}
+
+person ||--o{ teacher : "1:M"
+teacher ||--o{ student : "1:M"
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+
+title Example of Relation Schema
+
+hide circle
+
+entity "Table1" as t01 {
+    (PK) e1_id
+    --
+    e2
+    e3
+    e4
+}
+
+entity "Table2" as t02 {
+    (PK) e5
+    --
+    (FK) e2_id
+    e3
+}
+
+t01 --{ t02
+
+@enduml

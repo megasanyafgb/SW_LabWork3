@@ -1,0 +1,51 @@
+@startjson
+
+title JSON схема для моделі даних
+
+{
+  "description": "Information System Data Model",
+  "type": "object",
+  "object": {
+    "persons": {
+      "description": "Array of persons",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "number"},
+          "name": {"type": "string"},
+          "age": {"type": "number"}
+        }
+      }
+    },
+    "teachers": {
+      "description": "Array of teachers",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "number"},
+          "personId": {"type": "number"},
+          "course": {"type": "string"},
+          "workExperience": {"type": "number"}
+        }
+      }
+    },
+    "students": {
+      "description": "Array of students",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "number"},
+          "personId": {"type": "number"},
+          "teacherId": {"type": "number"},
+          "course": {"type": "string"},
+          "studentGroup": {"type": "string"}
+        }
+      }
+    }
+  }
+}
+
+@endjson

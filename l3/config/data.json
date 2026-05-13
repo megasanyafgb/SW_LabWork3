@@ -1,0 +1,13 @@
+{
+  "loc": {
+    "lname": "Odesa",
+    "dept": {
+      "dname": "Odesa Dept",
+      "emp": {
+        "ename": "Blake",
+        "job": "Manager",
+        "mgr": "King"
+      }
+    }
+  }
+}

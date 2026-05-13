@@ -1,0 +1,29 @@
+@startuml
+
+hide circle
+title Example of Classes Diagram 
+
+Class Person {
+    name
+    age
+}
+
+Class Teacher {
+    course
+    workExperience
+}
+
+Class Student {
+    course
+    studenGroup
+}
+
+Person <|-- Teacher
+
+Person <|-- Student
+
+Teacher"1" --> "+"Student : to learn
+
+Student"1" --> "+"Teacher : to study 
+
+@enduml
