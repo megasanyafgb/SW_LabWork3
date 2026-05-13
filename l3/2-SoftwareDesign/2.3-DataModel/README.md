@@ -12,31 +12,31 @@
 #### SQL схема
 
 ```sql
--- Create Person table (base for inheritance)
 CREATE TABLE person (
-    person_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    age INT NOT NULL CHECK (age > 0 AND age <= 150),
-    person_type VARCHAR(50) NOT NULL
+    person_id    NUMBER PRIMARY KEY,
+    name         VARCHAR(100) NOT NULL,
+    age          NUMBER NOT NULL CHECK (age > 0 AND age <= 150),
+    person_type  VARCHAR(50) NOT NULL
 );
 
--- Create Teacher table
 CREATE TABLE teacher (
-    teacher_id INT PRIMARY KEY AUTO_INCREMENT,
-    person_id INT NOT NULL,
-    course VARCHAR(100) NOT NULL,
-    work_experience INT NOT NULL DEFAULT 0,
-    FOREIGN KEY (person_id) REFERENCES person(person_id)
+    teacher_id      NUMBER PRIMARY KEY,
+    person_id       NUMBER NOT NULL,
+    course          VARCHAR(100) NOT NULL,
+    work_experience NUMBER DEFAULT 0,
+    CONSTRAINT fk_teacher_person 
+        FOREIGN KEY (person_id) REFERENCES person(person_id)
 );
 
--- Create Student table
 CREATE TABLE student (
-    student_id INT PRIMARY KEY AUTO_INCREMENT,
-    person_id INT NOT NULL,
-    teacher_id INT NOT NULL,
-    course VARCHAR(100) NOT NULL,
+    student_id    NUMBER PRIMARY KEY,
+    person_id     NUMBER NOT NULL,
+    teacher_id    NUMBER NOT NULL,
+    course        VARCHAR(100) NOT NULL,
     student_group VARCHAR(50) NOT NULL,
-    FOREIGN KEY (person_id) REFERENCES person(person_id),
-    FOREIGN KEY (teacher_id) REFERENCES teacher(teacher_id)
+    CONSTRAINT fk_student_person 
+        FOREIGN KEY (person_id) REFERENCES person(person_id),
+    CONSTRAINT fk_student_teacher 
+        FOREIGN KEY (teacher_id) REFERENCES teacher(teacher_id)
 );
 ```
