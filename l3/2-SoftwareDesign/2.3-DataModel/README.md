@@ -2,7 +2,8 @@
 
 #### Реляційна модель
 
-![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/megasanyafgb/SW_LabWork3/main/2-SoftwareDesign/2.3-DataModel/RelModelSchema.puml)
+<img width="256" height="488" alt="DataModel" src="https://github.com/user-attachments/assets/60889a81-e944-4b9a-a070-81d092538883" />
+
 
 #### JSON модель
 
