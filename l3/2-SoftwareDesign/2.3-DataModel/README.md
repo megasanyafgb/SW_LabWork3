@@ -7,7 +7,7 @@
 
 #### JSON модель
 
-![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/megasanyafgb/SW_LabWork3/main/2-SoftwareDesign/2.3-DataModel/JSONSchema.puml)
+<img width="1203" height="458" alt="-DataModel" src="https://github.com/user-attachments/assets/442e93d6-ec16-429d-837f-e075d4e8162e" />
 
 #### SQL схема
 
