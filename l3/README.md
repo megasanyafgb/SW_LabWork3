@@ -150,23 +150,3 @@ CREATE TABLE student (
     FOREIGN KEY (person_id) REFERENCES person(person_id),
     FOREIGN KEY (teacher_id) REFERENCES teacher(teacher_id)
 );
-```
-
-### Установка БД
-
-```bash
-mysql -u root -p < sql/PersonTeacherStudentSchema.sql
-```
-
-## Плани на подальший розвиток
-
-1. ✅ Концептуальне проектування (UML діаграми)
-2. ✅ Логічне проектування (Реляційна та JSON моделі)
-3. ✅ Створення SQL схеми
-4. ✅ Java реалізація класів
-5. ⏳ Підключення до MySQL/MariaDB
-6. ⏳ REST API для операцій CRUD
-7. ⏳ Веб-інтерфейс (HTML/CSS/JavaScript)
-8. ⏳ Розгортання на серверу (відповідно до діаграми розгортання)
-9. ⏳ Юнит-тести
-10. ⏳ Документація API
