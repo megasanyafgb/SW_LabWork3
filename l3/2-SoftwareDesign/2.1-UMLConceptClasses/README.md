@@ -9,4 +9,5 @@
 - Один викладач може викладати багатьох студентів (1:M)
 - Один студент навчається у одного викладача (M:1)
 
-![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/megasanyafgb/SW_LabWork3/main/2-SoftwareDesign/2.1-UMLConceptClasses/UML-ConceptClasses.puml)
+<img width="370" height="317" alt="UMLConceptClasses" src="https://github.com/user-attachments/assets/bfb4e8d4-c1a2-4632-9256-7c4559e56277" />
+
